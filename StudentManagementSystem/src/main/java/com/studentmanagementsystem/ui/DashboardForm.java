@@ -123,11 +123,13 @@ public class DashboardForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    //show student from
     private void btnStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStudentActionPerformed
         new StudentForm().setVisible(true); // we'll create this next
         //this.dispose();        // TODO add your handling code here:
     }//GEN-LAST:event_btnStudentActionPerformed
 
+    //show courseform
     private void btnCourseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCourseActionPerformed
         new CourseForm().setVisible(true); // optional, coming later
         //this.dispose();        // TODO add your handling code here:
