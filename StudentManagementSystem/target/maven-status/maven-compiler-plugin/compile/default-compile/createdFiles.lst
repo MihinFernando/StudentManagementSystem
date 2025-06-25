@@ -11,6 +11,7 @@ com\studentmanagementsystem\ui\CourseForm$5.class
 com\studentmanagementsystem\ui\ReportForm.class
 com\studentmanagementsystem\ui\DashboardForm$2.class
 com\studentmanagementsystem\ui\DashboardForm$3.class
+com\studentmanagementsystem\ui\LoginForm$2.class
 com\studentmanagementsystem\ui\LoginForm.class
 com\studentmanagementsystem\ui\CourseForm$1.class
 com\studentmanagementsystem\ui\StudentForm$5.class
