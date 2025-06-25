@@ -37,11 +37,13 @@ public class DashboardForm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Serif", 1, 48)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 51, 0));
         jLabel2.setText("Welcome to Dashboard");
 
+        btnStudent.setBackground(new java.awt.Color(255, 255, 51));
         btnStudent.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnStudent.setText("Manage Students");
         btnStudent.addActionListener(new java.awt.event.ActionListener() {
@@ -50,6 +52,7 @@ public class DashboardForm extends javax.swing.JFrame {
             }
         });
 
+        btnCourse.setBackground(new java.awt.Color(255, 255, 51));
         btnCourse.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnCourse.setText("Manage Courses");
         btnCourse.addActionListener(new java.awt.event.ActionListener() {
@@ -58,6 +61,7 @@ public class DashboardForm extends javax.swing.JFrame {
             }
         });
 
+        btnLogout.setBackground(new java.awt.Color(255, 255, 51));
         btnLogout.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnLogout.setText("Logout");
         btnLogout.addActionListener(new java.awt.event.ActionListener() {
@@ -66,6 +70,7 @@ public class DashboardForm extends javax.swing.JFrame {
             }
         });
 
+        btnReport.setBackground(new java.awt.Color(255, 255, 51));
         btnReport.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnReport.setText("View Reports");
         btnReport.addActionListener(new java.awt.event.ActionListener() {
@@ -88,15 +93,16 @@ public class DashboardForm extends javax.swing.JFrame {
                             .addComponent(btnReport)
                             .addComponent(btnLogout)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(272, 272, 272)
+                        .addGap(128, 128, 128)
                         .addComponent(jLabel2)))
-                .addContainerGap(199, Short.MAX_VALUE))
+                .addContainerGap(150, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
+                .addGap(32, 32, 32)
                 .addComponent(btnStudent)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                 .addComponent(btnCourse)
@@ -125,24 +131,21 @@ public class DashboardForm extends javax.swing.JFrame {
 
     //show student from
     private void btnStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStudentActionPerformed
-        new StudentForm().setVisible(true); // we'll create this next
-        //this.dispose();        // TODO add your handling code here:
+        new StudentForm().setVisible(true); 
     }//GEN-LAST:event_btnStudentActionPerformed
 
     //show courseform
     private void btnCourseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCourseActionPerformed
-        new CourseForm().setVisible(true); // optional, coming later
-        //this.dispose();        // TODO add your handling code here:
+        new CourseForm().setVisible(true); 
     }//GEN-LAST:event_btnCourseActionPerformed
 
     private void btnLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutActionPerformed
         new LoginForm().setVisible(true);
-        this.dispose();        // TODO add your handling code here:
+        this.dispose(); 
     }//GEN-LAST:event_btnLogoutActionPerformed
 
     private void btnReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportActionPerformed
         new ReportForm().setVisible(true); // JasperReports
-        //this.dispose();        // TODO add your handling code here:
     }//GEN-LAST:event_btnReportActionPerformed
 
     /**
