@@ -4,6 +4,8 @@
 
 package com.studentmanagementsystem;
 
+import com.studentmanagementsystem.ui.LoginForm;
+
 /**
  *
  * @author mihin
@@ -11,6 +13,6 @@ package com.studentmanagementsystem;
 public class StudentManagementSystem {
 
     public static void main(String[] args) {
-        
+        new LoginForm().setVisible(true);
     }
 }
